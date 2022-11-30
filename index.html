@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+ <title>My Portfolio Web Page</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container1">
+    <nav>
+      <h2 class="logo">Portfo<span>lio</span></h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html" target="_blank">About Me</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+        <li><a href="htmlNotes.html">My Notes</a></li>
+      </ul>
+      <a href="images/aftabcv.jpg"  target="_blank" class="btn">View My CV</a>
+    </nav>
+
+    <main>
+    <div class="content">
+      <h4>Hello, My Name is</h4>
+      <h1>Aftab <span>Ali</span></h1>
+      <h3>I'am A Student of B.C.A</h3>
+
+      <div class="mail-box">
+        <form>
+          <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+          <input type="submit" name="submit" value="Lets Start">
+        </form>
+      </div>
+      <a href="calculator.html" <button type="button" class="btns">My Projects</button></a>
+      <a href="images/aftabaliResume.pdf" download <button type="button" class="btns">Download CV</button> </a>
+
+    </div>
+  </div>
+</main>
+  <!--   -------------------------About me section--------------------------------- -->
+
+
+  <section class="section-2 background">
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/mypic.jpeg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About ME</h1>
+            <p class="paragraph">I'm Aftab Ali<br>and I am Student of BCA From Jaipur, RAJASTHAN </p><br>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br>Html, Css, Javascript</li>
+                <li><span>Programming Languages</span><br>C, C++, PHP</li>
+                <li><span>MS Office</span><br>Basic knowlege of Powerpoint, Excel, Word,</li>
+                <li><span>Photo Editing</span><br>Basic knowledge of Adobe-Photoshop</li>
+                <li><span>Video Editing</span><br>Basic knowledge in Video Editing</li>
+                <li><span>RS-Cit</span><br>Computer Basics Course</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience" id="experience">
+              <ul>
+                <li><span>Work Experience</span><br>Fresher</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education" id="education">
+              <ul>
+                <li><span>2022-Current</span><br> Doing B.C.A Degree Course</li>
+                <li><span>College</span><br>S.S Jain Subodh Pg College, Jaipur</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--   -----------------------------------Contact Form---------------------------------------- -->
+
+
+
+  <!-- -----------form-------------- -->
+
+  <section class="contact-box">
+
+    <div class="form-heading">
+      <h1>Contact Me For Work/General Enquiries</h1>
+    </div>
+
+    <div class="form-box">
+      <form>
+        <div class="form-name">
+          <label for="clientname" class="form-label">Name</label>
+          <input type="text" class="form-control" id="Name">
+        </div>
+
+        <div class="form-mail">
+          <label for="clientemail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="clientemail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">I'll never share your email and phone with anyone else.</div>
+        </div>
+
+        <div class="form-phone">
+          <label for="clientphone" class="form-label">Phone</label>
+          <input type="number" class="form-control" id="exampleInputPassword1">
+        </div>
+
+        <div class="form-enquiry">
+          <label for="clientemail" class="form-label">Enquiry</label>
+          <input type="text" class="form-control" id="Enquiry">
+        </div>
+
+    </div>
+    <div class="form-submit">
+      <button type="submit" class="submit-btn">Submit</button>
+    </div>
+    </form>
+
+
+
+
+    <!--   -------------javascript-------------------- -->
+
+
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tn) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tn).classList.add("active-tab");
+      }
+    </script>
+
+    <footer>
+      <p>Aftab ali</p>
+      <p>for contact me : ftbkhinchi@gmail.com</p>
+      <p class="end">©copyright by Aftab Ali</p>
+    </footer>
+
+</body>
+
+</html>

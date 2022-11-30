@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Calculator project</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    .header {
+      text-align: center;
+      font-weight: bold;
+      margin: 60px 0px;
+      background: #d8d8f5;
+      font-size: 25px;
+      padding: 11px 0px;
+    }
+
+    .footer {
+      margin: 50px;
+      font-size: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #clear {
+      width: 100px;
+    }
+
+    .formstyle {
+      width: 300px;
+      height: 450px;
+      margin: auto;
+      border: 2px solid black;
+      border-radius: 20px;
+      background: #d8d8f5;
+    }
+
+    #answerstyle {
+      margin: 20px;
+      width: 250px;
+      height: 35px;
+      box-shadow: inset 5px 5px 10px white, 3px 3px 6px;
+    }
+
+    #btns input {
+      width: 70px;
+      margin: 0px 13px;
+      height: 30px;
+      box-shadow: inset 5px 5px 10px white, 3px 3px 6px;
+    }
+
+
+    #clear {
+      width: 100px;
+      margin: 0 100px;
+      height: 30px;
+      border: 1px solid black;
+      box-shadow: inset 2px 2px 5px, 2px 3px 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p class="header">Calculator Project by Aftab</p>
+  </header>
+  <div class="formstyle">
+
+    <form name="forms">
+      <input type="text" name="answer" id="answerstyle" placeholder="  Look at Me">
+
+      </br></br>
+      <div id="btns">
+        <input type="button" value=" 1 " onclick="form.answer.value += '1'">
+        <input type="button" value=" 2 " onclick="form.answer.value += '2'">
+        <input type="button" value=" 3 " onclick="form.answer.value += '3'">
+
+        </br></br>
+        <input type="button" value=" 4 " onclick="form.answer.value += '4'">
+        <input type="button" value=" 5 " onclick="form.answer.value += '5'">
+        <input type="button" value=" 6 " onclick="form.answer.value += '6'">
+
+        </br></br>
+        <input type="button" value=" 7 " onclick="form.answer.value += '7'">
+        <input type="button" value=" 8 " onclick="form.answer.value += '8'">
+        <input type="button" value=" 9 " onclick="form.answer.value += '9'">
+
+        </br></br>
+        <input type="button" value=" + " onclick="form.answer.value += '+'">
+        <input type="button" value=" - " onclick="form.answer.value += '-'">
+        <input type="button" value=" * " onclick="form.answer.value += '*'">
+
+        </br></br>
+        <input type="button" value=" / " onclick="form.answer.value += '/'">
+        <input type="button" value=" 0 " onclick="form.answer.value += '0'">
+        <input type="button" value=" = " onclick="form.answer.value = eval(forms.answer.value)">
+      </div>
+
+      </br></br>
+      <input type="button" id="clear" value="Clear All" onclick="forms.answer.value= ''">
+    </form>
+  </div>
+  <footer>
+    <p class="footer">@copyright by aftab</p>
+  </footer>
+</body>
+
+</html>

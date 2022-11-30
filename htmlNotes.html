@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>MY HTML NOTES</title>
+  <style>
+    html{
+      font-size : 62.5%;
+      width : 100%;
+    }
+    
+    .html-notes h1{
+      text-align : center;
+        color: red;
+    }
+      
+  </style>
+</head>
+<body>
+  
+    <div class="html-notes">
+    <h1><u>HTML INTRODUCTION</u></h1>
+    <P>HTML stands for Hyper Text Markup Langauge.</P>
+    <P>HTML describe the structure of WEB PAGES.</P>
+    <P>HTML is very important language for creating web sites</P>
+    <P>We use html tags to define look and feel of a website.</P>
+
+    <h1>CHAPTER 1  : Creating our first website</h1>
+    <P>we start building a website by creating a file named index.html (it is special filename ) which is presented by when the website root is typed.</P>
+    
+    <h2>BASIC STRUCTURE OF HTML PAGE</h2>
+     
+   &lt; ! DOCTYPE html &gt;<br>
+        &lt; html &gt;<br>
+        &lt; head &gt;<br>
+        &lt; title &gt; &lt; /title &gt;<br>
+        &lt; /head &gt;<br>
+        &lt; body &gt;<br>
+        &lt; h1 &gt;&lt; /h1 &gt;<br>
+        &lt; p &gt;&lt; /p &gt;<br>
+        &lt; /body &gt;<br>
+        &lt; /html &gt; <br>
+    
+
+    <h2>COMMENTS IN HTML</h2>
+    <P>comments in HTML are used to mark text whick should not be parsed. they can help document the source code.</P>
+     <!-- HTML COMMENTS -->  
+
+    <h2>CASE SENSITIVITY</h2>
+    <P>HTML is a case insensitive language ( tag-H1 and tag-h1 ) are the same.</P>
+
+    <h1>CHAPTER 2 : BASIC HTML TAGS</h1>
+    <p>We can add elements inside the body tag to define the page layout.</p>
+
+    <h2>HTML ELEMENT</h2>
+    <p>everything from starting to the ending tag.</p>
+    <!-- eg. <body>content</body> -->
+
+    <h2>HTML ATTRIBUTES</h2>
+    <p>used to add more info. corresponding to an HTML tag.  example : <a href ="https://www.google.com"> GOOGLE </a> </p>
+    <p>we can either use single or double quotes in attributes.</p> 
+    
+    <h2>THE HEADING TAG</h2>
+    <p>heading tag is used to mark heading in HTML from h1 to h6, we have tags for the most important to the least important heading</p>
+
+    <h1>THE FIRST MOST IMPORTANT HEADING ( h1 )</h1>
+    <h2>SECOND MOST IMPORTANT HEADING ( h2 )</h2>
+    <h3>THIRD MOST IMPORTANT HEADING ( h3 )</h3>
+    <h4>FOURTH MOST IMPORTANT HEADING ( h4 )</h4>
+    <h5>FIFTH MOST IMPORTANT HEADING ( h5 )</h5>
+    <h6>SIXTH MOST IMPORTANT HEADING ( h6 )</h6>
+
+    <h2>THE PARAGRAPH TAG</h2>
+    <p>paragraph tags are used to add paragraph to an HTML page.</p>
+    <p>This is a paragraph. </p>
+
+    <h2>ANCHOR TAG</h2>
+    <p>the anchor tag is used to add links to an existing content inside an html page.</p>
+    <a href ="https//WWW.google.com">click me</a>
+
+    <h2>THE IMG TAG</h2>
+    <p>img tag is used to add image in an HTML page.</p>
+     
+    <img src="image.jpg">
+
+    <h2>BOLD, ITALIC & UNDERLINE TAGS</h2>
+    <p>we can use bold, italic & underline tags to highlight the text as follows :</p>
+
+    <b>This is bold text</b>
+    <i>This is italic text</i>
+    <u>This is underline text</u>
+
+    <h2>BR TAG</h2>
+    <p>The br tag is used to create line breaks in an HTML document.</p>
+
+    <h2>BIG & SMALL TAGS</h2>
+    <p>we can make the text a bit larger and a bit smaller using big & small tags respectively.</p>
+
+    <h2>HR TAG</h2>
+    <p>The hr tag in HTML is used to create a horizontal ruler often used to seprate the content.</p>
+
+    <h2>SUBSCRIPT & SUPERSCRIPT</h2>
+    <p>we can add subscript and superscript in HTML as follow :</p>
+    <sub>THIS</sub> is subscript.
+    <sup>THIS</sup> is superscript
+
+    <h2>PRE TAG</h2>
+    <P>HTML always ignores extra spaces and newlines. In order to display a piece of text as it is, We can use pre tag</P>
+
+    <pre>This is
+           written 
+             using
+                pre tag</pre>
+
+    <h1>CHAPTER 3 : CREATING A PAGE LAYOUT</h1>
+    <p>when we use the right tag in right place, it results in a better page layout, better indexing by search engines, we use the followinng tag to get the job done.</p>
+
+    <header>This is Header</header>
+    <main>This is main</main>
+    <footer>This is @footer</footer>
+
+    <p>Inside the main tag we Insert the following tags :</p>
+    <main>
+      <section>A page Section</section>
+      <article>A self contained content</article>
+      <aside>content aside from the content ( eg. ads etc )</aside>
+    </main>
+
+    <p>Creating a page like this is not neccessary but it creates a readable & structural layout Also they are useful for SEO.</p>
+
+    <h2>LINK ATTRIBUTES</h2>
+    <p>Google link - <a href ="https://www.google.com">Google</a></p>
+    <p>open in new tag - <a href ="https://www.google.com" target="_blank">Google</a> </p>
+
+    <p>we can put any content inside an anchor tag ( images, heading) etc. all are allowed ), 
+      
+    If the page is inside a directory, we need to make sure that we link to the correct page. 
+      
+    we can add links to images like this -
+    <a href="https://google.com"><img src='image.jpg' width="120"></a></p>
+
+    <h2>DIV TAG</h2>
+  <p>div tag is often used as a container for the other elements.
+     div is a block level element.</p>
+
+    <h2>SPAN TAG</h2>
+    <p>span is an inline container</p>
+
+    <h1>CHAPTER 4 : LISTS, TABLES & FORMS</h1>
+  
+    <h2>LISTS</h2>
+    <p>lists are used to diplay content which represents a list.</p>
+    <p>Unordered list : used to list unordered items.
+       <ul>
+         <li>home</li>
+         <li>about</li>
+       </ul></p>
+
+    <p>Ordered list : used to list ordered items.
+       <ol>
+         <li>phone</li>
+         <li>pc</li>
+         <li>laptop</li>
+       </ol></p>
+   
+    <h2>TABLES</h2>
+    <p>The table tag is used to display tables in HTML.
+       It is used to format & display tabular data.
+       tr tag -- used to display table row.
+       td tag -- used to display table data
+       th tag -- used in place of table data for displaying table headers.</p>
+    <p>we can define as many table rows as we want to add a caption to the table, we use, caption tag inside table.</p>
+
+    <p>thead tag : used to wrap table head ( caption tag, tr with th )...
+       tbody tag : used to wrap the table body...</p>
+
+    <h2>COLSPAN TAG</h2>
+  <p>This attributes is used to create cells spanning multiple columns
+     ( th colspan="3" /th )</p>
+
+    <h2>FORMS</h2>
+    <p>an HTML form is used to collect input from the user.
+       form tag is used for the same</p>
+    <form>
+      element of the form...
+    </form>
+
+    <p>there are different form elements for different kinds of user input</p>
+    <p>INPUT ELEMENT : can be type of text, chechbox, radio, button and submit. 
+       we also have a 'file' type. 
+       TEXTAREA ELEMENT : Defines a multi line text input cols & rows attributes 
+       can be used to size the textarea.
+       SELECT ELEMENT : Defines a drop down list.
+       note : you dont have to remember all the tags, you will automatically memorized, then with practice.</p>
+
+    <h2>EMBEDDING VIDEOS</h2>
+    <p> video tags is used to play videos in HTML...
+       <video src ="video.mp4">error</video></p>
+
+    <h2>ATTRIBUTES FOR VIDEOS</h2>
+    <P>We can use : WIDTH : to adjust width of a video ( height automatically adjust )...we can use autoplay / loop for autoplay and loop the video.</P>
+     
+    <h1>CHAPTER 5 : SEO</h1>
+    <P>we will focus only on HTML standpoint of SEO we will not be looking into keyword building and content optimizing aspect of SEO</P>
+
+    <h2>TYPE OF SEO</h2>
+    <p>on page seo</p>
+    <p>off page seo</p>
+
+   <h2>HTML SEO</h2>
+   <p>HTML developers can implement SEO using the following techniques :
+      1.set the title very nice & to the point.
+      2. set the meter discription. <meta name ="description" content ="abcde">
+      3. set a nice url slug.
+      4. set the meta keywords tag.
+      5. set the meta author tag. <meta name="author" content="abcd">
+      6. set a faricon.
+      7. compress images & other resources.
+      8. remove unused HTML / CSS & JS files + compress them.
+      9. add alt text to images...
+      <hr><hr>
+   </p>
+    </div>
+  
+</body>
+                </html>
